@@ -1,0 +1,48 @@
+﻿@model test13.Models.Reservetion
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Reservetion</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.HeureDebut)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.HeureDebut)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.HeureFin)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.HeureFin)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Date)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Date)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.IdUserNavigation)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.IdUserNavigation.AdresseMail)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.NumSalleNavigation)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.NumSalleNavigation.NumSalle)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model.IdRes">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>
