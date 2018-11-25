@@ -11,10 +11,24 @@ fontawesome.library.add(
   require('@fortawesome/fontawesome-free-solid/faHome'),
   require('@fortawesome/fontawesome-free-solid/faList'),
   require('@fortawesome/fontawesome-free-solid/faSpinner'),
+  
+  
+  //ce que j'ai ajouté
+  require('@fortawesome/fontawesome-free-solid/faCheckCircle'),
+  require('@fortawesome/fontawesome-free-solid/faAt'),
+  require('@fortawesome/fontawesome-free-solid/faUserTie'),
+  require('@fortawesome/fontawesome-free-solid/faBuilding'),
+  
+  
+  
+  
+  
+  
   // Brands
   require('@fortawesome/fontawesome-free-brands/faFontAwesome'),
   require('@fortawesome/fontawesome-free-brands/faMicrosoft'),
-  require('@fortawesome/fontawesome-free-brands/faVuejs')
+  require('@fortawesome/fontawesome-free-brands/faVuejs'),
+   
 )
 
 export {
