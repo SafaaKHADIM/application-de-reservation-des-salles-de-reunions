@@ -1,0 +1,36 @@
+﻿@model test13.Models.Salle
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Salle</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Etage)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Etage)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.NbrDePlace)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.NbrDePlace)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Datashow)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Datashow)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model.NumSalle">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>
