@@ -4,6 +4,9 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.SpaServices.Webpack;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using test13.Models;
+using Microsoft.EntityFrameworkCore;
+using Microsoft.AspNetCore.Http;
 
 namespace test13
 {
@@ -19,12 +22,24 @@ namespace test13
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+
+            services.Configure<CookiePolicyOptions>(options =>
+            {
+                // This lambda determines whether user consent for non-essential cookies is needed for a given request.
+                options.CheckConsentNeeded = context => true;
+                options.MinimumSameSitePolicy = SameSiteMode.None;
+            });
             // Add framework services.
             services.AddMvc()
                 .SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
 
-            // Simple example with dependency injection for a data provider.
-            services.AddSingleton<Providers.IWeatherProvider, Providers.WeatherProviderFake>();
+
+            var connection = @"Server=DESKTOP-24BUD91\SQLEXPRESS01;Database=mabase;Trusted_Connection=True;ConnectRetryCount=0";
+            services.AddDbContext<mabaseContext>(options => options.UseSqlServer(connection));
+        
+
+        // Simple example with dependency injection for a data provider.
+        services.AddSingleton<Providers.IWeatherProvider, Providers.WeatherProviderFake>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
