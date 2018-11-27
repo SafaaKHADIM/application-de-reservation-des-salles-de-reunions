@@ -18,7 +18,7 @@ fontawesome.library.add(
   require('@fortawesome/fontawesome-free-solid/faAt'),
   require('@fortawesome/fontawesome-free-solid/faUserTie'),
   require('@fortawesome/fontawesome-free-solid/faBuilding'),
-  
+  require('@fortawesome/fontawesome-free-solid/faCog'),
   
   
   
