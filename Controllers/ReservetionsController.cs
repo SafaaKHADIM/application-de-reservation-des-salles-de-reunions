@@ -9,6 +9,7 @@ using test13.Models;
 
 namespace test13.Controllers
 {
+	[Route("api/[controller]")]
     public class ReservetionsController : Controller
     {
         private readonly mabaseContext _context;
