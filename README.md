@@ -1,9 +1,12 @@
-# Asp.NETCore 2.1 Vue 2 Starter - by [DevHelp.Online](http://www.DevHelp.Online)
+# Asp.NETCore 2.1 Vue 2 -application de reservation des salles de réunions-
 
-This repo contains an ASP.NET Core + Vue.js 2 starter template (VS2017 or command line). The template is based
-on the [original starter templates](https://blogs.msdn.microsoft.com/webdev/2017/02/14/building-single-page-applications-on-asp-net-core-with-javascriptservices/) (Angular, Knockout, React, Aurelia), which can be found [here](https://github.com/aspnet/JavaScriptServices/tree/dev/templates)
 
-_Looking for ASP.NET Core & Angular 2.x+ Universal starter? [click here](https://github.com/MarkPieszak/aspnetcore-angular2-universal)_
+cette application permet:
+-de réserver une salle de réunion 
+-modifier la iste des salles disponibles
+-ajouter un utilisateur
+-annuler une reservation
+
  
 ---
 
