@@ -29,6 +29,18 @@ namespace test13
                 options.CheckConsentNeeded = context => true;
                 options.MinimumSameSitePolicy = SameSiteMode.None;
             });
+			
+			//session config
+			 services.AddDistributedMemoryCache();
+
+        services.AddSession(options =>
+        {
+            // Set a short timeout for easy testing.
+            options.IdleTimeout = TimeSpan.FromSeconds(10);
+            options.Cookie.HttpOnly = true;
+        });
+		//	
+			
             // Add framework services.
             services.AddMvc()
                 .SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
@@ -61,6 +73,10 @@ namespace test13
             }
 
             app.UseStaticFiles();
+			
+			
+			//session config
+			app.UseSession();
 
             app.UseMvc(routes =>
             {
