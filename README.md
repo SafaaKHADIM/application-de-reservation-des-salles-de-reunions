@@ -2,10 +2,10 @@
 
 
 cette application permet:
--de réserver une salle de réunion 
--modifier la iste des salles disponibles
--ajouter un utilisateur
--annuler une reservation
+* de réserver une salle de réunion 
+* modifier la iste des salles disponibles
+* ajouter un utilisateur
+* annuler une reservation
 
  
 ---
