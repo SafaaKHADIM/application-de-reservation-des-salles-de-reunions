@@ -13,7 +13,7 @@ export const routes = [
   { name: 'fetch-data', path: '/fetch-data', component: FetchData, display: 'Réservation', icon: 'check-circle' },
   { name: 'admin', path: '/admin', component: Admin , display: 'admin', icon: 'user-tie' },
   { name: 'settings', path: '/settings', component: Settings , display: 'settings', icon: 'cog' },
-  { name: 'test', path: '/test', component: Test , display: 'test', icon: 'cog' },
+  /*{ name: 'test', path: '/test', component: Test , display: 'test', icon: 'cog' },*/
   
   
   

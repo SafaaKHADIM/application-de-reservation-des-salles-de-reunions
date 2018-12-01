@@ -31,14 +31,14 @@ namespace test13
             });
 			
 			//session config
-			 services.AddDistributedMemoryCache();
+			/* services.AddDistributedMemoryCache();
 
         services.AddSession(options =>
         {
             // Set a short timeout for easy testing.
             options.IdleTimeout = TimeSpan.FromSeconds(10);
             options.Cookie.HttpOnly = true;
-        });
+        });*/
 		//	
 			
             // Add framework services.
@@ -76,7 +76,7 @@ namespace test13
 			
 			
 			//session config
-			app.UseSession();
+			//app.UseSession();
 
             app.UseMvc(routes =>
             {
